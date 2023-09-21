@@ -1,0 +1,56 @@
+.meal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info h2{
+    font-size: 30px;
+    margin: 0;
+}
+.dollar{
+    display: flex;
+    gap: 40px;
+}
+.dollar .one{
+    color: #8A2B06;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.dollar .two{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.amount{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.amount button{
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #8A2B06;
+    border: 1px solid #8A2B06;
+    border-radius: 5px;
+}
+.amount button:hover{
+    color: white;
+    background-color: #8A2B06;
+    cursor: pointer;
+}
