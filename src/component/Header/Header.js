@@ -3,6 +3,7 @@ import Modal from "../UI/Modal";
 import classes from "./Header.module.css";
 import ModalContect from "../ModalContent";
 import { useMeals } from "../../contexts/AmountContext";
+import {FaCartPlus} from "react-icons/fa6";
 function Header(){
     const[isOpen,setIsOpen]=useState(false);
     const{bills}=useMeals();
@@ -35,7 +36,7 @@ function Header(){
             </Modal>}
             <h1>ReactMeals</h1>
             <div className={classes.info} onClick={()=>setIsOpen(true)}>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYA340di9woWIBsFoLF8zQep3aLzdKCyoeA&usqp=CAU"/>
+                <span><FaCartPlus/></span>
                 <div>Your Cart </div>
                 <div className={classes.count}>
                     <label>{totalAmount}</label>
